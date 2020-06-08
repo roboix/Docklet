@@ -1,0 +1,10 @@
+version: '3'
+
+services: 
+    store-service:
+        build: ./store-back
+        volumes:
+            - /store-back:/usr/src/app
+        ports: 
+            - 5001:80
+        
